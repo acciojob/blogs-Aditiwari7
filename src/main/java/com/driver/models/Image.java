@@ -10,7 +10,7 @@ public class Image {
     private int Id;
 
     private String description;
-    private String dimensions;
+    private String dimension;
 
     @ManyToOne
     @JoinColumn
@@ -22,7 +22,7 @@ public class Image {
 
     public Image(String description, String dimension){
         this.description = description;
-        this.dimensions = dimension;
+        this.dimension = dimension;
     }
 
     public int getId() {
@@ -39,11 +39,11 @@ public class Image {
         this.description = description;
     }
 
-    public String getDimensions() {
-        return dimensions;
+    public String getDimension() {
+        return dimension;
     }
-    public void setDimensions(String dimensions) {
-        this.dimensions = dimensions;
+    public void setDimension(String dimension) {
+        this.dimension = dimension;
     }
 
     public Blog getBlog() {
