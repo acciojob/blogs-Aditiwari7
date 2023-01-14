@@ -58,7 +58,8 @@ public class BlogService {
     }
 
     public void deleteBlog(int blogId){
-        if(blogRepository1.findById(blogId).get() == null) return;
+        if(blogRepository1.findById(blogId).get() == null)
+            return;
         blogRepository1.deleteById(blogId);
     }
 }

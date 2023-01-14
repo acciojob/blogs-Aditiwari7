@@ -24,7 +24,6 @@ public class Blog {
     private List<Image> imageList;
 
     public Blog(){
-
     }
 
     public Blog(String title1, String content1, Date pubDate){

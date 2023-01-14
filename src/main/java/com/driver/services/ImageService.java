@@ -16,7 +16,7 @@ public class ImageService {
     ImageRepository imageRepository2;
 
     @Autowired
-    private BlogRepository IblogRepository;
+    BlogRepository IblogRepository;
 
     public Image createAndReturn(Blog blog, String description, String dimensions){
         Image image = new Image(description, dimensions);
